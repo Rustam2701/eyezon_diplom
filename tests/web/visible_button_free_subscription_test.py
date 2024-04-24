@@ -2,7 +2,7 @@ import allure
 from iVi_tests.pages.web.visible_button_free_subscription import free_subscription_title
 
 
-@allure.title('Visible button of free watching subscription in start page')
+@allure.title('Free watching subscription title correct')
 def test_visible_free_watching_button():
     free_subscription_title.open()
 
