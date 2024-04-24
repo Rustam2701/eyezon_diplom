@@ -1,12 +1,11 @@
-from selene import browser, have
 import allure
+from iVi_tests.pages.web.catalog_content import catalog_content
 
 
 @allure.title('Catalog "Мультфильмы" contents')
 def test_catalog_has_cartoons():
-    with allure.step('Open catalog "Мультфильмы"'):
-        browser.open('/')
-        browser.element('[data-test="menu_section_kids"]').click()
+    catalog_content.open()
 
-    with allure.step('Catalog must have "Мультфильмы смотреть онлайн"'):
-        browser.element('[class=headerBar__title]').should(have.text('Мультфильмы смотреть онлайн'))
+    catalog_content.open_catalog()
+
+    catalog_content.assert_text_cartoon()

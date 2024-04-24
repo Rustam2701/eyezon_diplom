@@ -1,11 +1,9 @@
-from selene import browser
 import allure
+from iVi_tests.pages.web.authorization_button import auth_button
 
 
 @allure.title("Authorization button clickable")
 def test_clickable_auth_button():
-    with allure.step('Open site'):
-        browser.open('/')
+    auth_button.open()
 
-    with allure.step('Click Authorization22 button'):
-        browser.element('[data-test=header_avatar]').click()
+    auth_button.click_auth_button()

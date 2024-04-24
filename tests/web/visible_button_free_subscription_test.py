@@ -1,16 +1,13 @@
-from selene import browser, have
 import allure
+from iVi_tests.pages.web.visible_button_free_subscription import free_subscription_title
 
 
 @allure.title('Visible button of free watching subscription in start page')
 def test_visible_free_watching_button():
-    with allure.step('Open catalog films'):
-        browser.open('/')
-        browser.element('[data-test="menu_section_films"]').click()
+    free_subscription_title.open()
 
-    with allure.step('Open page with free subscription'):
-        browser.element('[data-test="header_subscription_button"]').click()
+    free_subscription_title.open_catalog_films()
 
-    with allure.step('Assert text in free subscription'):
-        browser.element('[class="segmentedLanding__title segmentedLanding__title_default"]') \
-            .should(have.text('Подписка Иви'))
+    free_subscription_title.open_page_with_free_subscription()
+
+    free_subscription_title.assert_text_in_free_subscription()
