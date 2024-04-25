@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selene import browser
 from dotenv import load_dotenv
 
-from iVi_tests.utils import attach
+from iVi_project.utils import attach
 
 DEFAULT_BROWSER_VERSION = "120.0"
 

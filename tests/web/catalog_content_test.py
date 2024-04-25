@@ -1,5 +1,5 @@
 import allure
-from iVi_tests.pages.web.catalog_content import catalog_content
+from iVi_project.pages.web.catalog_content import catalog_content
 
 
 @allure.title('Catalog "Мультфильмы" contents')

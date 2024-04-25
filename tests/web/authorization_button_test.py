@@ -1,5 +1,5 @@
 import allure
-from iVi_tests.pages.web.authorization_button import auth_button
+from iVi_project.pages.web.authorization_button import auth_button
 
 
 @allure.title("Authorization button clickable")

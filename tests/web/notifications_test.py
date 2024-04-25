@@ -1,5 +1,5 @@
 import allure
-from iVi_tests.pages.web.notifications_start_page import notifications_title
+from iVi_project.pages.web.notifications_start_page import notifications_title
 
 
 @allure.title('Check notifications text')
