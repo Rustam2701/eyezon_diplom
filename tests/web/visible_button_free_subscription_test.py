@@ -1,5 +1,5 @@
 import allure
-from iVi_project.pages.web.visible_button_free_subscription import free_subscription_title
+from iVi_project.pages.web.visible_button_free_subscription_pages import free_subscription_title
 
 
 @allure.title('Free watching subscription title correct')

@@ -1,5 +1,5 @@
 import allure
-from iVi_project.pages.web.search_recommendation import search_recommendations
+from iVi_project.pages.web.search_recommendation_pages import search_recommendations
 
 
 @allure.title('Checking title recommendations')
