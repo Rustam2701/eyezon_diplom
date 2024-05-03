@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selene import browser
 from dotenv import load_dotenv
 
-from iVi_project.utils import attach
+from eyezon_project.utils import attach
 
 DEFAULT_BROWSER_VERSION = "120.0"
 
@@ -29,7 +29,7 @@ def setup_browser(request):
     browser_version = request.config.getoption('--browser_version')
     browser_version = browser_version if browser_version != "" else DEFAULT_BROWSER_VERSION
     options = Options()
-    browser.config.base_url = 'https://www.ivi.ru'
+    browser.config.base_url = 'https://www.eyezonthis.com/ru'
     browser.config.window_width = 1920
     browser.config.window_height = 1080
     selenoid_capabilities = {

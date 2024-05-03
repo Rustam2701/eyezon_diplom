@@ -1,11 +1,13 @@
 import allure
-from iVi_project.pages.web.authorization_button_pages import auth_button
+from eyezon_project.pages.web.authorization_invalid_email_page import auth_invalid_email
 
 
 @allure.title("Authorization button clickable")
 def test_clickable_auth_button():
-    auth_button.open()
+    auth_invalid_email.open()
 
-    auth_button.click_auth_button()
+    auth_invalid_email.click_auth_button()
 
-    auth_button.auth_pages_have_text_about_qr()
+    auth_invalid_email.type_invalid_email()
+
+    auth_invalid_email.notification_invalid_email()

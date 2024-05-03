@@ -1,5 +1,5 @@
 import requests
-from iVi_project.utils.attach import response_logging, response_attaching
+from eyezon_project.utils.attach import response_logging, response_attaching
 
 
 def base_request(base_url, endpoint, method, json=None, params=None, headers=None):
