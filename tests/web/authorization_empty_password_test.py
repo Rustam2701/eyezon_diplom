@@ -1,13 +1,13 @@
 import allure
-from eyezon_project.pages.web.authorization_empty_password_page import notifications_title
+from eyezon_project.pages.web.authorization_empty_password_page import auth_empty_password
 
 
-@allure.title('Check notifications text')
-def test_notifications_text():
-    notifications_title.open()
+@allure.title('Auth not possible with empty password field')
+def test_auth_empty_password():
+    auth_empty_password.open()
 
-    notifications_title.auth_button_click()
+    auth_empty_password.auth_button_click()
 
-    notifications_title.type_invalid_password()
+    auth_empty_password.type_user_data_with_empty_password()
 
-    notifications_title.assert_not_auth()
+    auth_empty_password.assert_required_field()

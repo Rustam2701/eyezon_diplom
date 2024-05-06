@@ -12,7 +12,7 @@ class AuthInvalidEmail:
             browser.element('.header__btn-login').click()
 
     def type_invalid_email(self):
-        with allure.step('Invalid email'):
+        with allure.step('Invalid email type'):
             browser.element('#login_username').type('sdfgsdf@bfdlfkgdlfg')
             browser.element('#login_password').click()
 

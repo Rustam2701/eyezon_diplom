@@ -1,15 +1,15 @@
 import allure
-from eyezon_project.pages.web.checking_main_fields_in_registration_window_page import free_subscription_title
+from eyezon_project.pages.web.checking_main_fields_in_registration_window_page import required_fields_registration
 
 
-@allure.title('Free watching subscription title correct')
-def test_visible_free_watching_button():
-    free_subscription_title.open()
+@allure.title('User don`t register without filling required fields')
+def test_register_with_empty_required_fields():
+    required_fields_registration.open()
 
-    free_subscription_title.auth_button_click11()
+    required_fields_registration.auth_button_click()
 
-    free_subscription_title.registration_button_click22()
+    required_fields_registration.registration_button_click()
 
-    free_subscription_title.click_button_next()
+    required_fields_registration.click_button_next()
 
-    free_subscription_title.assert_notifications_about_required_fields()
+    required_fields_registration.assert_notifications_about_required_fields()

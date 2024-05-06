@@ -2,7 +2,7 @@ from selene import browser, have
 import allure
 
 
-class CatalogCartoonContent:
+class EyeIconPasswordVisible:
     def open(self):
         with allure.step('Open site'):
             browser.open("/")
@@ -11,16 +11,17 @@ class CatalogCartoonContent:
         with allure.step('Auth button clickable'):
             browser.element('.header__btn-login').click()
 
-    def open_catalog(self):
-        with allure.step('Open catalog Cartoon'):
-            browser.element('[id="login_password"]').type('423423gdfdvdf')
+    def type_password(self):
+        with allure.step('Typing password'):
+            browser.element('#login_password').type('423423gdfdvdf')
 
-    def assert_text_cartoon(self):
-        with allure.step('Catalog must have "Мультфильмы смотреть онлайн"'):
+    def click_eye_icon_visible_password(self):
+        with allure.step('Click eye icon visible password'):
             browser.element('[data-icon="eye-invisible"]').click()
 
-    def assert_text_password(self):
-        browser.element('#login_password').should(have.value('423423gdfdvdf'))
+    def password_should_be_visible(self):
+        with allure.step('User can see typed password'):
+            browser.element('#login_password').should(have.value('423423gdfdvdf'))
 
 
-catalog_content = CatalogCartoonContent()
+eye_icon_password_visible = EyeIconPasswordVisible()

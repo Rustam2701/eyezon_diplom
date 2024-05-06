@@ -2,6 +2,7 @@ import allure
 from eyezon_project.pages.web.visible_menu_check_language_page import visible_menu_check_language
 
 
+@allure.title("User can see menu language")
 def test_visible_menu_checking_language():
     visible_menu_check_language.open()
 
