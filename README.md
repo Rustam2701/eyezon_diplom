@@ -85,3 +85,7 @@
 ##### В Telegram bot приходит сообщение с результатами тестирования.
 
 ![This is an image](images/telegram.png)
+
+### Пример видео прохождения автотеста
+![autotest_gif](images/autotestvideo.gif)
+
