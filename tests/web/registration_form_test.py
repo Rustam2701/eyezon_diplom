@@ -1,5 +1,5 @@
 import allure
-from eyezon_project.pages.web.checking_main_fields_in_registration_window_page import required_fields_registration
+from eyezon_project.pages.web.registration_form_page import required_fields_registration
 
 
 @allure.title('User don`t register without filling required fields')

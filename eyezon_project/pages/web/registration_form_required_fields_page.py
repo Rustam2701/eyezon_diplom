@@ -36,4 +36,4 @@ class FirstPageValidData:
             browser.element('[class="ant-steps-item-description"]').should(be.visible)
 
 
-first_page_valid_data = FirstPageValidData()
+registration_form = FirstPageValidData()

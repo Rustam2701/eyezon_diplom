@@ -24,4 +24,4 @@ class EyeIconPasswordVisible:
             browser.element('#login_password').should(have.value('423423gdfdvdf'))
 
 
-eye_icon_password_visible = EyeIconPasswordVisible()
+auth_form = EyeIconPasswordVisible()

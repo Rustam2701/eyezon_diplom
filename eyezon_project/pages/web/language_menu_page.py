@@ -16,4 +16,4 @@ class VisibleMenuCheckLanguage:
             browser.element('#w-dropdown-list-0').should(be.existing)
 
 
-visible_menu_check_language = VisibleMenuCheckLanguage()
+language_menu = VisibleMenuCheckLanguage()

@@ -2,7 +2,7 @@ from selene import browser, have
 import allure
 
 
-class SearchRecommendations:
+class RegistrationWay:
     def open(self):
         with allure.step('Open site'):
             browser.open("/")
@@ -20,4 +20,4 @@ class SearchRecommendations:
             browser.element('[class="sc-fEXmlR fleiSJ"]').should(have.text('Sign Up'))
 
 
-search_recommendations = SearchRecommendations()
+registration_way = RegistrationWay()
