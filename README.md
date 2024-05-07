@@ -78,7 +78,6 @@
 
 ![This is an image](images/Jira_report.png)
 
-
 <!-- Telegram -->
 
 ### <img width="3%" title="Telegram" src="images/telega.png"> Интеграция с Telegram
