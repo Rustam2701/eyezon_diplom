@@ -69,7 +69,6 @@
 
 ![This is an image](images/Allure_testops_suites.png)
 
-
 <!-- Jira -->
 
 ### <img width="3%" title="Jira" src="images/jira.png"> Интеграция с Jira
