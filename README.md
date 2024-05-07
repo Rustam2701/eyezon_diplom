@@ -54,7 +54,6 @@
 ##### Во вкладке Suites можно найти тест кейсы, в каждом из которых описаны шаги, а также приложени attachments: видео, скрины, фото, логи
 ![This is an image](images/Allure_suites.png)
 
-
 <!-- Allure TestOps -->
 
 ### <img width="3%" title="Allure TestOps" src="images/allure_testops.png"> Интеграция с Allure TestOps
